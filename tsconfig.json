@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Node",
+    "module": "CommonJS",
+    "strict": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "noEmit": true
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "www"]
+}
