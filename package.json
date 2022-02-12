@@ -1,12 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "build": "esbuild --bundle src/main.ts --outfile=www/main.js",
-    "dev": "npm run build -- --servedir=www",
-    "start": "npm run build -- --minify --sourcemap --servedir=www"
+    "build": "esbuild src/ECStore.ts --bundle --minify --format=cjs --sourcemap --outdir=lib",
+    "build:example": "esbuild src/examples/circle-and-boxes.ts src/examples/three-ball.ts --bundle --minify --sourcemap --outdir=docs"
   },
   "devDependencies": {
+    "@types/three": "^0.137.0",
     "esbuild": "^0.14.11",
+    "three": "^0.137.5",
     "typescript": "^4.5.4"
   }
 }
